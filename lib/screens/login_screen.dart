@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -11,6 +12,9 @@ class LoginScreen extends StatefulWidget {
 
 class _MyLoginState extends State<LoginScreen> {
   static const String _title = 'Login';
+  final _auth = FirebaseAuth.instance;
+  late String email;
+  late String password;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -45,6 +49,11 @@ class _MyLoginState extends State<LoginScreen> {
                       child: Column(
                         children: [
                           TextField(
+                            keyboardType: TextInputType.emailAddress,
+                            textAlign: TextAlign.center,
+                            onChanged: (value) {
+                              email = value;
+                            },
                             style: TextStyle(color: Colors.black),
                             decoration: InputDecoration(
                                 fillColor: Colors.grey.shade100,
@@ -58,8 +67,12 @@ class _MyLoginState extends State<LoginScreen> {
                             height: 30,
                           ),
                           TextField(
-                            style: TextStyle(),
                             obscureText: true,
+                            textAlign: TextAlign.center,
+                            onChanged: (value) {
+                              password = value;
+                            },
+                            style: TextStyle(),
                             decoration: InputDecoration(
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
@@ -74,43 +87,30 @@ class _MyLoginState extends State<LoginScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                'Sign in',
-                                style: TextStyle(
-                                    fontSize: 27, fontWeight: FontWeight.w700,color: Colors.white),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 40,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
                               TextButton(
-                                onPressed: () {
-                                  Navigator.pushNamed(context, HomeScreen.id);
+                                onPressed: () async{
+                                  try{
+                                    final newUser = await _auth.createUserWithEmailAndPassword(
+                                        email: email, password: password);
+                                    if(newUser != null){
+                                      Navigator.pushNamed(context, HomeScreen.id);
+                                    }
+                                  }
+                                  catch(e){
+                                    print(e);
+                                  }
+
+
                                 },
-                                child: Text(
-                                  'Sign Up',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      color: Colors.white,
-                                      fontSize: 18),
-                                ),
-                                style: ButtonStyle(),
+                                 child: Text(
+                                        'Sign Up',
+                                        textAlign: TextAlign.left,
+                                          style: TextStyle(
+                                          decoration: TextDecoration.underline,
+                                           color: Colors.white,
+                                              fontSize: 18),
+                                  ),
                               ),
-                              TextButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    'Forgot Password',
-                                    style: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                    ),
-                                  )),
                             ],
                           )
                         ],

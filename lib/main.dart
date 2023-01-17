@@ -1,11 +1,21 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:info_guild/screens/home_screen.dart';
 import 'package:info_guild/screens/login_screen.dart';
 import 'package:info_guild/screens/splash_screen.dart';
 
-void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+
+final _auth = FirebaseAuth.instance;
+String loggedUser = "";
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp( InfoGuild());
+}
+
+class InfoGuild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
