@@ -1,6 +1,6 @@
 # info_guild
 
-A new Flutter project.
+This app contains the information about differnt types hackthons , schlorships , internships and open-source opportunities available for students.
 
 ## Getting Started
 
