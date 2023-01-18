@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:info_guild/screens/home_screen.dart';
 import 'package:info_guild/screens/login_screen.dart';
 import 'package:info_guild/screens/splash_screen.dart';
+import 'package:info_guild/screens/HACKATHONS.dart';
+import 'package:info_guild/screens/SCHOLARSHIPS.dart';
+import 'package:info_guild/screens/INTERNSHIPS.dart';
+import 'package:info_guild/screens/OPENSOURCE.dart';
 
 
 
@@ -29,6 +33,10 @@ class InfoGuild extends StatelessWidget {
         SplashScreen.id : (context) => SplashScreen(),
         LoginScreen.id : (context) => LoginScreen(),
         HomeScreen.id : (context) => HomeScreen(),
+        HACKATHONS.id : (context) => HACKATHONS(),
+        SCHOLARSHIPS.id : (context) => SCHOLARSHIPS(),
+        INTERNSHIPS.id : (context) => INTERNSHIPS(),
+        OPENSOURCE.id : (context) => OPENSOURCE(),
       },
     );
   }

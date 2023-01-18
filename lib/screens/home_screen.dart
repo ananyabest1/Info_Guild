@@ -3,6 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:info_guild/screens/HACKATHONS.dart';
+import 'package:info_guild/screens/INTERNSHIPS.dart';
+import 'package:info_guild/screens/SCHOLARSHIPS.dart';
+import 'package:info_guild/screens/OPENSOURCE.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = 'home_screen';
@@ -100,6 +104,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   children:[
                     InkWell(
                       onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HACKATHONS()));
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -119,6 +126,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     InkWell(
                       onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => SCHOLARSHIPS()));
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -130,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         child: Column(
                           children: [
-                            Text("Scholorships" , style: GoogleFonts.pacifico(
+                            Text("Scholarships" , style: GoogleFonts.pacifico(
                               fontSize: 25,
                               color: Colors.black,
                             ),),
@@ -139,6 +149,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     InkWell(
                       onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => INTERNSHIPS()));
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -158,6 +171,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     InkWell(
                       onTap: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => OPENSOURCE()));
                       },
                       child: Container(
                         decoration:
@@ -188,4 +204,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
