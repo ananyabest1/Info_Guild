@@ -8,6 +8,7 @@ import 'package:info_guild/screens/HACKATHONS.dart';
 import 'package:info_guild/screens/SCHOLARSHIPS.dart';
 import 'package:info_guild/screens/INTERNSHIPS.dart';
 import 'package:info_guild/screens/OPENSOURCE.dart';
+import 'package:info_guild/screens/SIH.dart';
 
 
 
@@ -37,6 +38,8 @@ class InfoGuild extends StatelessWidget {
         SCHOLARSHIPS.id : (context) => SCHOLARSHIPS(),
         INTERNSHIPS.id : (context) => INTERNSHIPS(),
         OPENSOURCE.id : (context) => OPENSOURCE(),
+        SIH.id : (context) => SIH(),
+
       },
     );
   }
