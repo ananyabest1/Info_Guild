@@ -13,7 +13,7 @@ class _OPENSOURCEState extends State<OPENSOURCE> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.orangeAccent,
         appBar: AppBar(
           backgroundColor: const Color(0xFF030308),
           title: Text(
@@ -42,46 +42,65 @@ class _OPENSOURCEState extends State<OPENSOURCE> {
             child: GridView(children: [
               InkWell(
                 onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF90E0E5),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Opensource-1',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://blog.tooljet.com/content/images/2022/09/Screenshot-2022-09-27-at-08.03.21.png"),
+                      fit: BoxFit.cover,
+
+                    ),
+                    borderRadius: BorderRadius.circular(20),color: const Color(0xFF90E0E5),),
+                  ),),
               InkWell(
                 onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF48CAE4),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Opensource-2',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-Vertical.png"),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(20),color: const Color(0xFF48CAE4),),
+                  ),),
               InkWell(
                 onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF00B4D8),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Opensource-3',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://pbs.twimg.com/profile_images/561419803202568194/Pjk5iqNn_400x400.png"),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(20),color: const Color(0xFF00B4D8),),
+                  ),),
               InkWell(
                 onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF0096C7),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Opensource-4',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13AWJs7n3Jg5dHRjReLcGl9PfuL0AigEa8c_Uo1hSOdZ0KELLwL2ZTa7ZDpfhL2WScis&usqp=CAU"),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(20),color: const Color(0xFF0096C7),),
+                  ),),
               InkWell(
                 onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF006AA3),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Opensource-5',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201201203505/MLH-Fellowship-%E2%80%93-Programs-Offered-Application-Process-Benefits.png"),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(20),color: const Color(0xFF006AA3),),
+                  ),),
               InkWell(
                 onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF023E8A),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Opensource-6',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),],
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://media.licdn.com/dms/image/C510BAQGSObrO0QPlMQ/company-logo_200_200/0/1555704980721?e=2147483647&v=beta&t=JjmObXiOOQwgANdMb1DX6LQtRg_qkE3Uo-MEakBT9uU"),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(20),color: const Color(0xFF023E8A),),
+                 ),),],
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),)),
         ),
       ),
