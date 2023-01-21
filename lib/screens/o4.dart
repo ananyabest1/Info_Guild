@@ -31,9 +31,9 @@ class _SIHState extends State<SIH> {
           children: [ Positioned( top : 10,
             left: 50,
             child:
-                 CircleAvatar(
-              radius: 150,
-             backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+            CircleAvatar(
+                radius: 150,
+                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -78,7 +78,7 @@ class _SIHState extends State<SIH> {
                               SizedBox(height: 25),
                               Text(
                                 " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
-                                    ,
+                                ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),
                                 textAlign: TextAlign.justify,
