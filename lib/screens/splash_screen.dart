@@ -53,7 +53,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
-                        "Get Start",
+                        "Get Started",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 22,
