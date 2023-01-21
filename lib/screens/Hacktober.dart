@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class Hacktober extends StatefulWidget {
+  static const String id = 'Hacktober';
   @override
-  _SIHState createState() => _SIHState();
+  _HacktoberState createState() => _HacktoberState();
 }
 
-class _SIHState extends State<SIH> {
+class _HacktoberState extends State<Hacktober> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -23,7 +23,7 @@ class _SIHState extends State<SIH> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff00005C),
+      backgroundColor: Color(0xfffcff4b),
       body: Container(
         width: double.maxFinite,
         height: double.maxFinite,
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://blog.tooljet.com/content/images/2022/09/Screenshot-2022-09-27-at-08.03.21.png')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -61,7 +61,7 @@ class _SIHState extends State<SIH> {
                                 style: TextStyle(
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xff00005C)
+                                    color: Color(0xfffcff4b)
                                 ),
                               ),
                               Row(
@@ -77,7 +77,8 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                " HACKTOBERFEST is DIGITALOCEAN'S annual event that encourages people to open source throughout October.""   "
+                                "HACKTOBERFEST perfectly encapsulates the Open Source culture and the skills that it contributes to. "
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),
@@ -97,7 +98,7 @@ class _SIHState extends State<SIH> {
                               _launchURL('https://www.sih.gov.in/');
                             },
                             child: Icon(Icons.arrow_forward_rounded),
-                            color: Color(0xff00005C),
+                            color: Color(0xfffcff4b),
                           ),
                         ),
                       ),

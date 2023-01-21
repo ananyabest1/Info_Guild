@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class Uber extends StatefulWidget {
+  static const String id = 'Uber';
   @override
-  _SIHState createState() => _SIHState();
+  _UberState createState() => _UberState();
 }
 
-class _SIHState extends State<SIH> {
+class _UberState extends State<Uber> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://i0.wp.com/www.scholarshipsinindia.com/wp-content/uploads/uber-hacktag-2021.jpg?fit=200%2C200&ssl=1')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -77,7 +77,7 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                "Uber Hacktag 2.0 is a dream hackathon, open for all engineering students pursuing full-time B.Tech./ B.E./ M.Tech./ M.E./Dual-Degree. The winners of which shall be rewarded with not only cash rewards upto INR 500,000, but also participate in interviews for full-time roles and internships at the global giant, Uber."
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),

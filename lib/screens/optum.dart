@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class optum extends StatefulWidget {
+  static const String id = 'optum';
   @override
-  _SIHState createState() => _SIHState();
+  _optumState createState() => _optumState();
 }
 
-class _SIHState extends State<SIH> {
+class _optumState extends State<optum> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://www.optum.com/content/dam/optum3/events/skins/logos/optum_2x.png')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -77,7 +77,7 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                " Optum Stratethon is a platform that not only brings some of the best minds together to solve very real and current health care related problems byt also lets them battle it out with each other to identify the most innovative solution that could help improve the lives of millions around the world."
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),

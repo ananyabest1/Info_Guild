@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class MoSt extends StatefulWidget {
+  static const String id = 'MoSt';
   @override
-  _SIHState createState() => _SIHState();
+  _MoStState createState() => _MoStState();
 }
 
-class _SIHState extends State<SIH> {
+class _MoStState extends State<MoSt> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -23,7 +23,7 @@ class _SIHState extends State<SIH> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff00005C),
+      backgroundColor: Color(0xff99d98c),
       body: Container(
         width: double.maxFinite,
         height: double.maxFinite,
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://pbs.twimg.com/profile_images/1600249531555274753/LYQe6yBZ_400x400.png')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -61,7 +61,7 @@ class _SIHState extends State<SIH> {
                                 style: TextStyle(
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xff00005C)
+                                    color: Color(0xff99d98c)
                                 ),
                               ),
                               Row(
@@ -77,7 +77,7 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                " Summer Analysts join for 2 months in May of each year. Summer Analysts are placed into a specific development or infrastructure team, both of which are designed to offer a real-world, project-based experience that will demonstrate firsthand what it's like to be a technologist for a world-class financial firm."
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),
@@ -97,7 +97,7 @@ class _SIHState extends State<SIH> {
                               _launchURL('https://www.sih.gov.in/');
                             },
                             child: Icon(Icons.arrow_forward_rounded),
-                            color: Color(0xff00005C),
+                            color: Color(0xff99d98c),
                           ),
                         ),
                       ),

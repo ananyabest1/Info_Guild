@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class GirlsSOC extends StatefulWidget {
+  static const String id = 'GirlsSOC';
   @override
-  _SIHState createState() => _SIHState();
+  _GirlsSOCState createState() => _GirlsSOCState();
 }
 
-class _SIHState extends State<SIH> {
+class _GirlsSOCState extends State<GirlsSOC> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -23,7 +23,7 @@ class _SIHState extends State<SIH> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff00005C),
+      backgroundColor: Color(0xfffcff4b),
       body: Container(
         width: double.maxFinite,
         height: double.maxFinite,
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://media.licdn.com/dms/image/C510BAQGSObrO0QPlMQ/company-logo_200_200/0/1555704980721?e=2147483647&v=beta&t=JjmObXiOOQwgANdMb1DX6LQtRg_qkE3Uo-MEakBT9uU')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -61,7 +61,7 @@ class _SIHState extends State<SIH> {
                                 style: TextStyle(
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xff00005C)
+                                    color: Color(0xfffcff4b)
                                 ),
                               ),
                               Row(
@@ -77,7 +77,9 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                " GirlScript Summer of Code is a 3-month long"
+                                "OpenSource  program by GirlScript Foundation."
+
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),
@@ -97,7 +99,7 @@ class _SIHState extends State<SIH> {
                               _launchURL('https://www.sih.gov.in/');
                             },
                             child: Icon(Icons.arrow_forward_rounded),
-                            color: Color(0xff00005C),
+                            color: Color(0xfffcff4b),
                           ),
                         ),
                       ),

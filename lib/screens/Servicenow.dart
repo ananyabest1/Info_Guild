@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class Servicenow extends StatefulWidget {
+  static const String id = 'Servicenow';
   @override
-  _SIHState createState() => _SIHState();
+  _ServicenowState createState() => _ServicenowState();
 }
 
-class _SIHState extends State<SIH> {
+class _ServicenowState extends State<Servicenow> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://i0.wp.com/www.scholarshipsinindia.com/wp-content/uploads/servicenow-women-code-to-win-2023-india.jpg?fit=200%2C200&ssl=1')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -77,7 +77,8 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                " ServiceNow invites female engineering students pursuing a career in technology to create impact and help solve some of the most challenging real-life problems at our annual Women Code to Win 2023 - India! Lead the way forward with your tech acumen, fuel your passion and maximize your learning to grow more."
+
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),

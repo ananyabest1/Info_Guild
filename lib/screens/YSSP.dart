@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class YSSP extends StatefulWidget {
+  static const String id = 'YSSP';
   @override
-  _SIHState createState() => _SIHState();
+  _YSSPState createState() => _YSSPState();
 }
 
-class _SIHState extends State<SIH> {
+class _YSSPState extends State<YSSP> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -23,7 +23,7 @@ class _SIHState extends State<SIH> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff00005C),
+      backgroundColor: Color(0xffffb3c1),
       body: Container(
         width: double.maxFinite,
         height: double.maxFinite,
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://www.scholarshipsinindia.com/wp-content/uploads/yashad-sumedha-scholarship-programme-1.jpg')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -61,7 +61,7 @@ class _SIHState extends State<SIH> {
                                 style: TextStyle(
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xff00005C)
+                                    color: Color(0xffffb3c1)
                                 ),
                               ),
                               Row(
@@ -77,7 +77,7 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                "Yashad-Sumedha invites applications from students studying in B.Tech 1st semester (2022-23),who have secured 75% and above marks in Senior Secondary Examination. The family income of such students should be less than 2.5 lakh PA. It'll be provided in partnership with Hindustan Zinc Limited, "
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),
@@ -97,7 +97,7 @@ class _SIHState extends State<SIH> {
                               _launchURL('https://www.sih.gov.in/');
                             },
                             child: Icon(Icons.arrow_forward_rounded),
-                            color: Color(0xff00005C),
+                            color: Color(0xffffb3c1),
                           ),
                         ),
                       ),

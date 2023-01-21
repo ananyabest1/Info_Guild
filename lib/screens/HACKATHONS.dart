@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:info_guild/screens/SIH.dart';
+import 'package:info_guild/screens/Flipkart.dart';
+import 'package:info_guild/screens/Uber.dart';
+import 'package:info_guild/screens/Servicenow.dart';
+import 'package:info_guild/screens/optum.dart';
+import 'package:info_guild/screens/CodeHers.dart';
 
 class HACKATHONS extends StatefulWidget {
   static const id = 'HACKATHONS';
@@ -12,10 +17,10 @@ class HACKATHONS extends StatefulWidget {
 class _HACKATHONSState extends State<HACKATHONS> {
   @override
   Widget build(BuildContext context) {
-    debugShowCheckedModeBanner: false;
     return MaterialApp(
+     debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF48CAE4),
         appBar: AppBar(
           backgroundColor: const Color(0xFF030308),
           title: Text(
@@ -37,55 +42,90 @@ class _HACKATHONSState extends State<HACKATHONS> {
                 icon: const Icon(Icons.keyboard_return_sharp))
           ],
         ),
-        body: Container(child: Padding(
-          padding: const EdgeInsets.all(10.0),
-            child: GridView(children: [
-              InkWell(
-                onTap:(){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => SIH()));
-                },
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF90E0E5),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [ Image(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThQ2wsHjP4cD-CALDgfwDZ_2EDW_IYrjUotg&usqp=CAU')),
-                      ],),),),
-              InkWell(
-                onTap:(){
-                },
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF48CAE4),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image(image: NetworkImage('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F401489889%2F1248429749423%2F1%2Foriginal.20221129-094625?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1280%2C640&s=570e62e74a389eb2d9e5cd0a5a2caaf6'))],),),),
-              InkWell(
-                onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF00B4D8),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Hackathon-3',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
-              InkWell(
-                onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF0096C7),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Hackathon-4',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
-              InkWell(
-                onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF006AA3),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Hackathon-5',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),
-              InkWell(
-                onTap:(){},
-                child: Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: const Color(0xFF023E8A),),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('Hackathon-6',style: TextStyle(color:Colors.white,fontSize: 25),),],),),),],
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),)),
+        body: Container(
+          child: Padding(
+            padding: const EdgeInsets.all(13.0),
+            child: GridView(gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),
+              children: [
+                InkWell(
+                  onTap:(){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SIH()));}
+                 ,child: Container(
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage("https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1"),
+                        ),
+                        borderRadius: BorderRadius.circular(20),color: Colors.white),
+                  ),
+                ),
+
+                InkWell(
+                  onTap:(){Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Flipkart()));
+
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/60ccb1c32901f_D2C__150-150.png"),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(20),color: const Color(0xFF48CAE4),),
+                  ),
+                ),
+                InkWell(
+                  onTap:(){Navigator.push(context, MaterialPageRoute(builder: (context) => Uber()));},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("https://i0.wp.com/www.scholarshipsinindia.com/wp-content/uploads/uber-hacktag-2021.jpg?fit=200%2C200&ssl=1"),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(20),color: const Color(0xFF00B4D8),),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap:(){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Servicenow()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("https://i0.wp.com/www.scholarshipsinindia.com/wp-content/uploads/servicenow-women-code-to-win-2023-india.jpg?fit=200%2C200&ssl=1"),
+                      ),
+                      borderRadius: BorderRadius.circular(20),color: const Color(0xFF0096C7),),
+                  ),
+                ),
+                InkWell(
+                  onTap:(){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => optum()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("https://media.licdn.com/dms/image/C4E22AQHrEyzviViB5w/feedshare-shrink_800/0/1666970776940?e=2147483647&v=beta&t=eYT1WGcCv_M0G6YeaZMIbHIrWGt_usmOgtmxW4b_TBc"),
+                      ),
+                      borderRadius: BorderRadius.circular(20),color: const Color(0xFF006AA3),),
+                  ),
+                ),
+                InkWell(
+                  onTap:(){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => CodeHers()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/60ad0f7d5e8a5_unnamed.jpg"),
+                      ),
+                      borderRadius: BorderRadius.circular(20),color: const Color(0xFF023E8A),),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

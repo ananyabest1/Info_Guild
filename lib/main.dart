@@ -9,6 +9,29 @@ import 'package:info_guild/screens/SCHOLARSHIPS.dart';
 import 'package:info_guild/screens/INTERNSHIPS.dart';
 import 'package:info_guild/screens/OPENSOURCE.dart';
 import 'package:info_guild/screens/SIH.dart';
+import 'package:info_guild/screens/Flipkart.dart';
+import 'package:info_guild/screens/Uber.dart';
+import 'package:info_guild/screens/Servicenow.dart';
+import 'package:info_guild/screens/optum.dart';
+import 'package:info_guild/screens/CodeHers.dart';
+import 'package:info_guild/screens/YSSP.dart';
+import 'package:info_guild/screens/AIEESE.dart';
+import 'package:info_guild/screens/FAER.dart';
+import 'package:info_guild/screens/Colgate.dart';
+import 'package:info_guild/screens/HDFC.dart';
+import 'package:info_guild/screens/GF.dart';
+import 'package:info_guild/screens/MS.dart';
+import 'package:info_guild/screens/SI.dart';
+import 'package:info_guild/screens/MoSt.dart';
+import 'package:info_guild/screens/Adobe.dart';
+import 'package:info_guild/screens/Codess.dart';
+import 'package:info_guild/screens/GSOC.dart';
+import 'package:info_guild/screens/Outreachy.dart';
+import 'package:info_guild/screens/codejam.dart';
+import 'package:info_guild/screens/mLH.dart';
+import 'package:info_guild/screens/GirlsSOC.dart';
+
+
 
 
 
@@ -39,6 +62,28 @@ class InfoGuild extends StatelessWidget {
         INTERNSHIPS.id : (context) => INTERNSHIPS(),
         OPENSOURCE.id : (context) => OPENSOURCE(),
         SIH.id : (context) => SIH(),
+        Flipkart.id : (context) => Flipkart(),
+        Uber.id : (context) => Uber(),
+        Servicenow.id : (context) => Servicenow(),
+        optum.id : (context) => optum(),
+        CodeHers.id : (context) => CodeHers(),
+        YSSP.id : (context) => YSSP(),
+        AIEESE.id : (context) => AIEESE(),
+        FAER.id: (context) => FAER(),
+        Colgate.id : (context) => Colgate(),
+        HDFC.id : (context) => HDFC(),
+        GF.id : (context) => GF(),
+        MS.id : (context) => MS(),
+        SI.id : (context) => SI(),
+        MoSt.id : (context) => MoSt(),
+        Adobe.id : (context) => Adobe(),
+        Codess.id: (context) => Codess(),
+        GSOC.id : (context) => GSOC(),
+        Outreachy.id : (context) => Outreachy(),
+        codejam.id : (context) => codejam(),
+        GirlsSOC.id : (context) => GirlsSOC(),
+        mLH.id : (context) => mLH(),
+
 
       },
     );

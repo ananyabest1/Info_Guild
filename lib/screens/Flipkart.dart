@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class Flipkart extends StatefulWidget {
+  static const String id = 'Flipkart';
   @override
-  _SIHState createState() => _SIHState();
+  _FlipkartState createState() => _FlipkartState();
 }
 
-class _SIHState extends State<SIH> {
+class _FlipkartState extends State<Flipkart> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/60ccb1c32901f_D2C__150-150.png')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -77,7 +77,8 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                " GRiD is Flipkart’s Flagship Engineering Campus Challenge which provides you the opportunity to apply your technical knowledge and skills, to compete and complete key challenges."
+                                "Its 3rd edition features many challenging problem Statements to expand your horizons."
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),

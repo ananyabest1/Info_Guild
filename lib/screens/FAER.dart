@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class SIH extends StatefulWidget {
-  static const String id = 'SIH';
+class FAER extends StatefulWidget {
+  static const String id = 'FAER';
   @override
-  _SIHState createState() => _SIHState();
+  _FAERState createState() => _FAERState();
 }
 
-class _SIHState extends State<SIH> {
+class _FAERState extends State<FAER> {
 
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri(scheme: "https", host: url);
@@ -23,7 +23,7 @@ class _SIHState extends State<SIH> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff00005C),
+      backgroundColor: Color(0xffffb3c1),
       body: Container(
         width: double.maxFinite,
         height: double.maxFinite,
@@ -33,7 +33,7 @@ class _SIHState extends State<SIH> {
             child:
             CircleAvatar(
                 radius: 150,
-                backgroundImage: NetworkImage('https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1')),),
+                backgroundImage: NetworkImage('https://www.examsplanner.in/scholarship/templates/images/FAER-McAfee-scholar-awards.jpg')),),
             Positioned(
                 top: 320,
                 child: Container(
@@ -61,7 +61,7 @@ class _SIHState extends State<SIH> {
                                 style: TextStyle(
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
-                                    color: Color(0xff00005C)
+                                    color: Color(0xffffb3c1)
                                 ),
                               ),
                               Row(
@@ -77,7 +77,8 @@ class _SIHState extends State<SIH> {
                               ),
                               SizedBox(height: 25),
                               Text(
-                                " Smart India Hackathon is a nationwide initiative to provide students a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem solving."
+                                " FAER Scholar Programme is conducted to select scholars from engineering colleges based on a project work in the areas of (1) Computer Science, Data Science & IT, (2) Cyber Security & Safety, (3) AI, (5) Mobile Communications, (5) Renewable Energy Systems, (6) Solutions Engineering, (7) Rural Technologies, (8) Health Care Technologies, (9) Labour saving Technologies , (10) Ecology and Environment."
+
                                 ,
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 20),
@@ -97,7 +98,7 @@ class _SIHState extends State<SIH> {
                               _launchURL('https://www.sih.gov.in/');
                             },
                             child: Icon(Icons.arrow_forward_rounded),
-                            color: Color(0xff00005C),
+                            color: Color(0xffffb3c1),
                           ),
                         ),
                       ),
