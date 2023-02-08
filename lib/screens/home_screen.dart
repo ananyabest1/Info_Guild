@@ -7,6 +7,7 @@ import 'package:info_guild/screens/HACKATHONS.dart';
 import 'package:info_guild/screens/INTERNSHIPS.dart';
 import 'package:info_guild/screens/SCHOLARSHIPS.dart';
 import 'package:info_guild/screens/OPENSOURCE.dart';
+import 'package:info_guild/link.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = 'home_screen';
@@ -48,8 +49,12 @@ class _HomeScreenState extends State<HomeScreen> {
           centerTitle: true ,
           actions :  <Widget> [
             IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.notifications),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Link()));
+              },
+              icon: const Icon(Icons.chat_outlined),
             ),
 
           ],
@@ -57,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
           leading: IconButton(
             onPressed: () {},
             icon: IconButton(
-                onPressed: () {},
+                onPressed: (){},
                 icon: const Icon(Icons.menu)
             ),
           ),
