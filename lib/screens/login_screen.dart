@@ -49,8 +49,8 @@ class _MyLoginState extends State<LoginScreen> {
                   },
                   height: 50,
                   minWidth: 100,
-                  color: Color(0xFF13005A),
-                  child: const Text('Logout',style: TextStyle(color: Colors.white,fontSize: 20,),),
+                  color: Colors.white,
+                  child: const Text('Logout',style: TextStyle(color: Color(0xFF13005A),fontSize: 20,),),
                 ),
                 SizedBox(height: 40,),
                 MaterialButton(onPressed: (){
@@ -58,9 +58,9 @@ class _MyLoginState extends State<LoginScreen> {
                 },
                   height: 60,
                   minWidth: 120,
-                  color: Color(0xFF13005A),
+                  color: Colors.white,
                   child: const Text('Welcome to Info Guild',style:
-                  TextStyle(color: Colors.white,
+                  TextStyle(color: Color(0xFF13005A),
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
                     letterSpacing: 1,),),
@@ -69,26 +69,29 @@ class _MyLoginState extends State<LoginScreen> {
             ),
           ) :
           Center(
-            child: MaterialButton(
-             child: Text('Sign Up With Google',style:
-            TextStyle(color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 22,
-              letterSpacing: 1,),),
-              height: 60,
-              minWidth: 150,
-              color: Color(0xFF13005A),
-            onPressed: () {
-              _googleSignIn.signIn().then((userData) {
-                setState(() {
-                  _isLoggedIn = true;
-                  _userObj = userData!;
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: MaterialButton(
+               child: Text('Sign Up With Google',style:
+              TextStyle(color: Color(0xFF13005A),
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                letterSpacing: 1,),),
+                height: 60,
+                minWidth: 150,
+                color: Colors.white,
+              onPressed: () {
+                _googleSignIn.signIn().then((userData) {
+                  setState(() {
+                    _isLoggedIn = true;
+                    _userObj = userData!;
+                  });
+                }).catchError((e) {
+                  print(e);
                 });
-              }).catchError((e) {
-                print(e);
-              });
-            },
-          ),),
+              },
+          ),
+            ),),
           ),
         ),
       );
