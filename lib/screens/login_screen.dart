@@ -87,7 +87,7 @@ class _MyLoginState extends State<LoginScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              TextButton(
+                              ElevatedButton(
                                 onPressed: () async{
                                   try{
                                     final newUser = await _auth.createUserWithEmailAndPassword(
