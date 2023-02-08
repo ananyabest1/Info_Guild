@@ -1,6 +1,6 @@
 # info_guild
 
-This app contains the information about differnt types hackthons , schlorships , internships and open-source opportunities available for students.
+This app contains information about different types of scholarships, hackathons, internships, and open-source opportunities available for students with an innovative feature of an AI chatbot embedded in the app.
 
 ## Getting Started
 
