@@ -18,31 +18,51 @@ class _HACKATHONSState extends State<HACKATHONS> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xFF48CAE4),
         appBar: AppBar(
-          backgroundColor: const Color(0xFF030308),
-          title: Text(
-            "Hackathons",
-            style: GoogleFonts.pacifico(
-              fontSize: 30,
-              color: Colors.white,
-            ),),
-          centerTitle: true,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(10),
-                bottomRight: Radius.circular(10)),),
-          actions: <Widget>[
-            IconButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: const Icon(Icons.keyboard_return_sharp))
-          ],
+          elevation: 15,
+          backgroundColor: const Color(0xFF083ef6),
+          flexibleSpace: ClipRRect(
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(200)),
+            child: Container(
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(""),),
+                  gradient: SweepGradient(
+                      endAngle: 1,
+                      colors: [Color(0xFF083ef6),Color(0xFF008DFF),
+                        Colors.deepPurpleAccent,Colors.lightBlueAccent,Colors.deepPurple,Colors.white]
+                  )
+              ),
+            ),
+          ),
+          shape:RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(200))
+          ),
+          bottom: PreferredSize(
+            preferredSize: Size.fromHeight(150),
+            child:Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                    padding: const EdgeInsets.only(left: 4,bottom: 135),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment. spaceAround,
+                      children: [
+                        Text("Hackathon",style: GoogleFonts.pacifico(textStyle:TextStyle(color: Colors.black,fontSize: 40,)))
+                      ],
+                    )
+                ),
+              ],
+            ),
+          ),
         ),
-        body: Container(
+        body:
+        Container(
           child: Padding(
             padding: const EdgeInsets.all(13.0),
             child: GridView(gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),
@@ -50,13 +70,13 @@ class _HACKATHONSState extends State<HACKATHONS> {
                 InkWell(
                   onTap:(){
                     Navigator.push(context, MaterialPageRoute(builder: (context) => SIH()));}
-                 ,child: Container(
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: NetworkImage("https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1"),
-                        ),
-                        borderRadius: BorderRadius.circular(20),color: Colors.white),
-                  ),
+                  ,child: Container(
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1"),
+                      ),
+                      borderRadius: BorderRadius.circular(20),color: Colors.white),
+                ),
                 ),
 
                 InkWell(

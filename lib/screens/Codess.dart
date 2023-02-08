@@ -87,20 +87,6 @@ class _CodessState extends State<Codess> {
                             ],
                           )
                       ),
-                      Padding(
-                        padding: EdgeInsets.symmetric(vertical: 16.0),
-                        child: Material(
-                          elevation: 5.0,
-                          borderRadius: BorderRadius.circular(30.0),
-                          child: MaterialButton(
-                            onPressed: () {
-                              _launchURL('https://www.sih.gov.in/');
-                            },
-                            child: Icon(Icons.arrow_forward_rounded),
-                            color: Color(0xff99d98c),
-                          ),
-                        ),
-                      ),
                     ],
                   ),
 

@@ -23,27 +23,44 @@ class _INTERNSHIPSState extends State<INTERNSHIPS> {
       home: Scaffold(
         backgroundColor: Color(0xFFd9ed92),
         appBar: AppBar(
-          backgroundColor: const Color(0xFF030308),
-          title: Text(
-            "Internships",
-            style: GoogleFonts.pacifico(
-              fontSize: 30,
-              color: Colors.white,
+          elevation: 15,
+          backgroundColor: const Color(0xFF083ef6),
+          flexibleSpace: ClipRRect(
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(200)),
+            child: Container(
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(""),),
+                  gradient: SweepGradient(
+                      endAngle: 1,
+                      colors: [Color(0xFF083ef6),Color(0xFF008DFF),
+                        Colors.deepPurpleAccent,Colors.lightBlueAccent,Colors.deepPurple,Colors.white]
+                  )
+              ),
             ),
           ),
-          centerTitle: true,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(10),
-                bottomRight: Radius.circular(10)),
+          shape:RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(200))
           ),
-          actions: <Widget>[
-            IconButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: const Icon(Icons.keyboard_return_sharp))
-          ],
+          bottom: PreferredSize(
+            preferredSize: Size.fromHeight(150),
+            child:Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                    padding: const EdgeInsets.only(left: 4,bottom: 135),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment. spaceAround,
+                      children: [
+                        Text("Internship",style: GoogleFonts.pacifico(textStyle:TextStyle(color: Colors.black,fontSize: 40,)))
+                      ],
+                    )
+                ),
+              ],
+            ),
+          ),
         ),
         body: Container(
           child: Padding(

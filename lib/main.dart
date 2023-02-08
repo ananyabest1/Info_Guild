@@ -30,10 +30,8 @@ import 'package:info_guild/screens/Outreachy.dart';
 import 'package:info_guild/screens/codejam.dart';
 import 'package:info_guild/screens/mLH.dart';
 import 'package:info_guild/screens/GirlsSOC.dart';
-
-
-
-
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:info_guild/link.dart';
 
 final _auth = FirebaseAuth.instance;
 String loggedUser = "";
@@ -44,7 +42,7 @@ void main() async {
 }
 
 class InfoGuild extends StatelessWidget {
-
+  final GoogleSignIn _googleSignIn = GoogleSignIn();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -83,6 +81,7 @@ class InfoGuild extends StatelessWidget {
         codejam.id : (context) => codejam(),
         GirlsSOC.id : (context) => GirlsSOC(),
         mLH.id : (context) => mLH(),
+        Link.id : (context)=> Link(),
 
 
       },
