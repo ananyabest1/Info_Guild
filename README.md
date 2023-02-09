@@ -4,7 +4,7 @@ This app contains information about different types of scholarships, hackathons,
 Here we have different images which will replicate our level of work done while making this app a successful one.
 
 <img width="230" alt="SS1" src="https://user-images.githubusercontent.com/112580594/217589005-61502967-e9e5-4462-bbdf-e0dfa9c10196.png">
-![WhatsApp Image 2023-02-09 at 1 19 38 PM](https://user-images.githubusercontent.com/100715571/217759257-416eec7d-e8c5-4555-a846-7b09e4dbf8d9.jpeg)
+![SS17](https://user-images.githubusercontent.com/100715571/217760247-1ef3d37c-7bd2-4f68-bf71-51fa195b6604.png)
 <img width="241" alt="SS5" src="https://user-images.githubusercontent.com/112580594/217589220-d6446e83-fba4-40da-be14-991be4a405a1.png">
 <img width="234" alt="SS6" src="https://user-images.githubusercontent.com/112580594/217589281-34e049b0-fe7c-458b-9259-db8c01f54c05.png">
 <img width="227" alt="SS7" src="https://user-images.githubusercontent.com/112580594/217589354-62f6190d-f26d-41bf-a725-77b1b877231d.png">
