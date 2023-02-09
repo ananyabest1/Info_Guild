@@ -17,7 +17,6 @@ Here we have different images which will replicate our level of work done while 
 <img width="227" alt="SS12" src="https://user-images.githubusercontent.com/112580594/217589519-42c6e4ea-eaf1-4e5f-8882-617586033897.png">
 <img width="238" alt="SS13" src="https://user-images.githubusercontent.com/112580594/217589584-861c6450-0a9c-42b2-a4f6-f8c92e7e995b.png">
 <img width="238" alt="SS13" src="https://user-images.githubusercontent.com/112580594/217589606-3dc9593d-43e5-4c4b-8e54-908ef207d4e0.png">
-<img width="231" alt="SS14" src="https://user-images.githubusercontent.com/112580594/217589748-57fbc0b6-81f6-44d0-b2d4-36e65bcf7b60.png">
 <img width="233" alt="SS15" src="https://user-images.githubusercontent.com/112580594/217589796-69415115-9346-4c3e-a013-fbb2860fef52.png">
 <img width="238" alt="SS16" src="https://user-images.githubusercontent.com/112580594/217589819-5f44cce6-3440-4435-b25b-a18b812a749c.png">
 
